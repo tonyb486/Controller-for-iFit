@@ -1,0 +1,109 @@
+input {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: #ccc;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    font-family: sans-serif;
+    background: #eee;
+}
+div#hud {
+    width: 100%;
+    background: #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+    top: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+div.segment {
+    background: #ddd;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+div.selected {
+    background: #aaa;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+}
+
+div.hidden {
+    display: none;
+}
+
+div.box {
+    display: inline-block;
+    text-align: center;
+    width: 28%;
+    border: 3px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #eee;
+    font-size: 12px;
+}
+
+div#time {
+    background: #eee;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+div#schedule {
+    position: absolute;
+    top: 275px;
+    width: 100%;
+    overflow: auto;
+}
+
+hr {
+    border: 1px solid #555;
+}
+
+div#segtime {
+    float: right;
+}
+
+div#begin {
+    position: fixed;
+    background: #ccc;
+    height: 120%;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+select {
+    font-size: 1em;
+    margin: 20px;
+}
+
+div#backdrop {
+    z-index: 999;
+    background: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+
+

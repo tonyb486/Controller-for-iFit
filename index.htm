@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Workout</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0; minimal-ui" />
+
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+        <script type="text/javascript" src="riffwave.js"></script>
+        <script type="text/javascript" src="gentone.js"></script>
+        <script type="text/javascript" src="schedules.js"></script>
+        <script type="text/javascript" src="workout.js"></script>
+
+    </head>
+
+    <body onload="pageload()">
+
+        <div id="begin">
+            <select id="scheduleselect"> </select>
+            <div style="padding: 20px; background: #eee" ontouchstart="load()" onmousedown="load()">
+                Tap to start workout
+            </div>
+        </div>
+        <div id="backdrop"></div>
+        <div id="hud">
+            <div id="time" style="font-size: 3em;">00:31</div>
+
+            <div class="box">
+                Speed <hr />
+                <span id="speed" style="font-size: 2em; font-weight: bold">55</span> <br />
+                miles/hr
+            </div>
+            <div class="box">
+                Incline <hr />
+                <span id="incline" style="font-size: 2em; font-weight: bold">1.0</span> <br />
+                percent
+            </div>
+            <div class="box">
+                Distance<hr /> 
+                <span id="distance" style="font-size: 2em; font-weight: bold">123</span> <br />
+                miles
+            </div>
+        </div>
+
+        <div id="schedule"></div>
+
+    </body>
+
+</html>
